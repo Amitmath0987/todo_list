@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: linear-gradient(120deg, #eec12d, rgb(115, 255, 33));
+    color: aliceblue;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    ;
+
+}
+header{
+    font-size: 1.5rem;
+  
+    margin-top: 20px;
+    
+}
+header,
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.input,
+.todo-button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background:white;
+    
+}
+.todo-button{
+    color: yellowgreen;
+    cursor: pointer;
+    transition: 0.5sec ease;
+}
+.todo-button:hover{
+    background: #eec12d;
+    color: white;
+}
+
+/* style the todolist */
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    list-style: none;
+    min-width: 30%;
+}
+.todo{
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    transition: all 0.5s ease;
+}
+.todo-item{
+    flex: 1;
+    color: black;
+    padding: 0rem 0.5rem;
+}
+.trash_btn,.complete_btn{
+    
+    background: rgb(255, 36, 36);
+    border: none;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+}
+.complete_btn{
+    background:rgb(5, 230, 5);
+}
+.complete_btn:{
+border: none;
+}
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+.complete{
+    color:rgb(7, 143, 7);
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+
+}
+.select{
+    margin: 1rem;
+   position: relative;
+    overflow: hidden;
+}
+select{
+    color: #eec12d;
+    width: 10rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    background:  yellowgreen;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+   color: whitesmoke;
+   transition: all 0.3s ease;
+
+}
+.select:hover::after{
+    background: #eec12d; 
+    color: white;
+}
+
+.deleteall_btn{
+    border: none;
+    padding: 1rem;
+    background: #ff2424;
+    margin-left: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.deleteall_btn:hover{
+    background:  #fd6565;
+    color: white;
+   
+}
+span{
+    color:  #fff6d6;
+}
